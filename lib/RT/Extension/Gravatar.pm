@@ -1,10 +1,10 @@
 package RT::Extension::Gravatar;
 
-use 5.008;
+use 5.008003;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 require RT::User;
 package RT::User;
@@ -84,7 +84,7 @@ Christian Loos <cloos@netsandbox.de>
 
 =head1 COPYRIGHT AND LICENCE
  
-Copyright (C) 2010, Christian Loos.
+Copyright (C) 2010-2011, Christian Loos.
  
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
