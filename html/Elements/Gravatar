@@ -1,6 +1,5 @@
-% if( $UserObj->HasGravatar() ) {
-<div id="gravatar"><img alt="" src="<% $UserObj->GravatarUrl() %>"></div>
-% }
+<img height="<% $Size %>" width="<% $Size %>" alt="Gravatar" src="<% $UserObj->GravatarUrl($Size) %>">
 <%ARGS>
 $UserObj => undef
+$Size    => 80
 </%ARGS>

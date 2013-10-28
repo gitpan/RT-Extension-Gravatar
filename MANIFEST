@@ -1,5 +1,7 @@
+Changes
 html/Callbacks/Gravatar/Admin/Users/Modify.html/LeftColumnBottom
 html/Callbacks/Gravatar/Ticket/Elements/ShowRequestor/AboutThisUser
+html/Callbacks/Gravatar/User/Elements/Portlets/ExtraInfo/BeforeExtraInfo
 html/Callbacks/Gravatar/User/Prefs.html/FormLeftColumn
 html/Elements/Gravatar
 inc/Module/Install.pm
@@ -15,5 +17,7 @@ inc/Module/Install/WriteAll.pm
 lib/RT/Extension/Gravatar.pm
 Makefile.PL
 MANIFEST			This list of files
+MANIFEST.SKIP
 META.yml
 README
+SIGNATURE
