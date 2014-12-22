@@ -4,7 +4,7 @@ use 5.008003;
 use strict;
 use warnings;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 package RT::User;
 
@@ -45,11 +45,11 @@ sub HasGravatar {
 
 =head1 NAME
 
-RT::Extension::Gravatar - Adds gravatar images to rt
+RT::Extension::Gravatar - Displays Gravatar images within RT
 
 =head1 DESCRIPTION
 
-This Plugin adds an gravatar image to the following places:
+This Plugin displays Gravatar image on the following pages:
 
 =over
 
@@ -67,15 +67,21 @@ This Plugin adds an gravatar image to the following places:
 
 =over
 
-=item perl Makefile.PL
+=item C<perl Makefile.PL>
 
-=item make
+=item C<make>
 
-=item make install
+=item C<make install>
 
-=item Edit your /opt/rt4/etc/RT_SiteConfig.pm
+May need root permissions
 
-Add this line:
+=item Edit your F</opt/rt4/etc/RT_SiteConfig.pm>
+
+If you are using RT 4.2 or greater, add this line:
+
+    Plugin('RT::Extension::Gravatar');
+
+For RT 4.0, add this line:
 
     Set(@Plugins, qw(RT::Extension::Gravatar));
 
@@ -105,12 +111,13 @@ Return true if the user has an gravatar image.
 
 Christian Loos <cloos@netsandbox.de>
 
-=head1 LICENCE AND COPYRIGHT
+=head1 LICENSE AND COPYRIGHT
  
-Copyright (C) 2010-2013, Christian Loos.
+This software is Copyright (C) 2010-2014, Christian Loos.
  
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This is free software, licensed under:
+
+  The GNU General Public License, Version 2, June 1991
 
 =head1 SEE ALSO
 
